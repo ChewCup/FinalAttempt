@@ -5,6 +5,9 @@ input[type=text] {
     width: 160px;
     margin: 20px;
 }
+input[name="charname"] {
+    margin-top: 40px;
+}
 label[for=name] {
     width: 220px;
     height: 30px;
@@ -112,5 +115,28 @@ p {
     margin-top: 40px;
     margin-left: 80px;
     height: 40px;
+}
+table { 
+    border: solid 1px #000000; 
+    background: transparent;
+    margin-left: 250px;
+    margin-top: 90px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+td { 
+    font-family: sans-serif;
+    border: none; 
+    color: azure;
+    background: rgb(71, 112, 126); 
+    padding-left: 30px;
+}
+th {
+    color: rgb(173, 231, 241);
+    font-family:'Gill Sans';
+    padding-left: 30px;
+    padding-right: 30px;
 }
 

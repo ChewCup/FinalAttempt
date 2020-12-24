@@ -3,36 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Character Page</title>
-    
     <link rel="stylesheet" type="text/css" href="main.css">
-
-    <style>
-        
-        table { 
-            border: solid 1px #000000; 
-            background: transparent;
-            margin-left: 250px;
-            margin-top: 90px;
-            border-top-width: 2px;
-            border-left-width: 2px;
-            border-bottom-width: 2px;
-            border-right-width: 2px;
-        }
-        td { 
-            font-family: sans-serif;
-            border: none; 
-            color: azure;
-            background: rgb(71, 112, 126); 
-            padding-left: 30px;
-        }
-        th {
-            color: rgb(173, 231, 241);
-            font-family:'Gill Sans';
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        
-    </style>
 </head>
 <body>
     <nav class="nav-main">
@@ -40,7 +11,7 @@
             <li><a href="http://localhost:8080/">Home</a></li>
             <li><a href="http://localhost:8080/character">Characters</a><onclick="charPage()"</li>
         </ul>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Fake search...">
     </nav>
-
 </body>
 </html>
