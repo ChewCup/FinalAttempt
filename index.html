@@ -6,13 +6,16 @@
     <title>Final Attempt</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
     <nav class="nav-main">
         <ul>
             <li><a href="http://localhost:8080/">Home</a></li>
             <li><a href="http://localhost:8080/character">Characters</a></li>
         </ul>
-        <input type="text" id="mySearchInput" onkeyup="myFunction()" placeholder="Fake search...">
+        <div>
+        <input type="text" id="mySearchInput" placeholder="Fake search...">
+        </div>
     </nav>
 
     <div class="character">
@@ -35,9 +38,16 @@
             <input type="submit" value="Create character" onclick='alert("Saved!")'>
         </form>
     </div>
+    <script>src="/searchFunction.js"</script>
     <script>
+    let input = document.querySelector("input");
+    input.addEventListener("keyup", (e) => {
+    if (e.keyCode === 13) {
         
-    </script>
+        console.log(e.target.value)
+    }
+})
+</script>   
 
 </body>
 </html>
